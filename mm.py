@@ -27,3 +27,5 @@ for idx, row in todo_df.iterrows():
     st.write(f" ➔ 【title 任務名稱】這一格拿到了： {row['title']}") 
 
     st.write(f" ➔ 【owner 負責人】這一格拿到了： {row['owner']}")
+
+    st.write(f" ➔ 【status 狀態】這一格拿到了： {row['status']}")
