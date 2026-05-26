@@ -1,6 +1,8 @@
 import streamlit as st
 
- from streamlit_gsheets import GSheetsConnection
+from streamlit_gsheets 
+
+import GSheetsConnection
 
 st.set_page_config(layout="wide")
 
@@ -10,7 +12,7 @@ st.caption("授權標註：edit by 闕河正")
 
 conn = st.connection("gsheets", type=GSheetsConnection) 
 
-df = conn.read(worksheet="Tasks", ttl="0")
+df = conn.read(worksheet="Tasks", ttl= 0)
 
 todo_df = df[df["status"] == "To Do"]
 
